@@ -10,3 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	}
 });
+
+(async()=>{
+    const response = await chrome.runTime.sendMessage({ greeting: "Hello" });
+})
